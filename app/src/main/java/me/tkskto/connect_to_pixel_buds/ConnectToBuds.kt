@@ -32,8 +32,8 @@ class ConnectToBuds : AppWidgetProvider() {
 
         when (intent.action) {
             INTENT_NAME ->
-                Log.d("intent.action:" , INTENT_NAME)
-                // TODO: connect to buds through Bluetooth.
+                Log.d("intent.action:", INTENT_NAME)
+            // TODO: connect to buds through Bluetooth.
         }
     }
 }
@@ -45,7 +45,7 @@ internal fun updateAppWidget(context: Context, appWidgetManager: AppWidgetManage
 
     val pendingIntent = PendingIntent.getBroadcast(context, appWidgetId, intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
-    views.setOnClickPendingIntent(R.id.button, pendingIntent);
+    views.setOnClickPendingIntent(R.id.button, pendingIntent)
 
     appWidgetManager.updateAppWidget(appWidgetId, views)
 }
