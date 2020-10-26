@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Connect-to-Pixel-Buds</string>
-    <string name="connected">connected</string>
-    <string name="not_connected">do not connected</string>
+    <string name="connected">ON</string>
+    <string name="not_connected">OFF</string>
 </resources>
